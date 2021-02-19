@@ -50,7 +50,8 @@ let meaning = function checkNumMeaning(variable, info) {
             appData.deposit = confirm('Есть ли у вас депозит в банке?');
                         
          for (let i = 0; i < 2; i++) {
-            let itemExpenses = prompt('Введите обязательную статью расходов?');
+             let item1, item1Info = 'Введите обязательную статью расходов?';
+            let itemExpenses = meaningStr(item1, item1Info);
             let cashExpenses;
             do {
                 cashExpenses = prompt('Во сколько это обойдется?');
